@@ -55,7 +55,7 @@
           <br />
           <% products.forEach(({id,nombre,descripcion,precio}) => { %>
             <article>
-              <h4><%= nombre %> </h4>
+               <a class="link" href="/products/detail/<%= id %>"><h4><%= nombre %> </h4></a>
               <p class="ps-text-grey">
               <span><%= descripcion %> </span> <strong>U$$ <%= precio %> </strong>
               </p>
