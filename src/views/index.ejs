@@ -57,7 +57,7 @@
             <article>
                <a class="ps-button" href="/products/detail/<%= id %>"><h4><%= nombre %> </h4></a>
               <p class="ps-text-grey">
-              <span><%= descripcion %> </span> <strong>U$$ <%= precio %> </strong>
+              <span><%= descripcion.length > 100 ? descripcion : "Plato Típico" %> </span> <strong>U$$ <%= precio %> </strong>
               </p>
               <br />
               </article>
