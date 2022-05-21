@@ -55,7 +55,7 @@
           <br />
           <% products.forEach(({id,nombre,descripcion,precio}) => { %>
             <article>
-               <a class="ps-button" href="/products/detail/<%= id %>"><h4><%= nombre %> </h4></a>
+               <a class="ps-button" href="/products/detail/<%= id %>#menu"><h4><%= nombre %> </h4></a>
               <p class="ps-text-grey">
               <span><%= descripcion.length > 100 ? descripcion : "Plato Típico" %> </span> <strong>U$$ <%= precio %> </strong>
               </p>
